@@ -5,6 +5,7 @@
 # Licensed under the MIT License. See the LICENSE accompanying this file
 # for the specific language governing permissions and limitations under
 # the License.
+# /sbin/ebsnvme-id - https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-ebs-volumes.html
 
 from __future__ import (absolute_import, division, print_function)
 
@@ -17,9 +18,9 @@ version_added: 1.0.0
 short_description: ebsmap
 description:
     - Map the EBS device name as defined in AWS (e.g. /dev/sdf) with the volume provided to the OS
-author:
-    - Dougal Seeley <aws@dougalseeley.com>
-    - Amazon.com inc.
+authors:
+    - Dougal Seeley <ebsmap@dougalseeley.com>
+    - Amazon.com Inc.
 '''
 
 EXAMPLES = '''
@@ -29,7 +30,7 @@ EXAMPLES = '''
   register: r__ebsmap
 
 - name: ebsmap
-  debug: msg={{ebsmap}}
+  debug: msg={{r__ebsmap}}
 '''
 
 RETURN = '''

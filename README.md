@@ -1,5 +1,10 @@
 # ebsmap
 
+**DEPRECATED**: please use https://github.com/dseeley/blockdevmap instead, which maps GCP _as well as_ AWS block devices.
+
+---
+
+
 This is an Ansible module that is able to map AWS EBS device names (including NVME devices) to the host device names.  
 
 ## Credits
